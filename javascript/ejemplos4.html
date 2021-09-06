@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body">
+        
+    
+
+
+    <!--<script>
+        function vaciar(control){
+            control.value='';
+        }
+        function verficarentrada(control){
+            if(control.value=''){
+                alert('debe ingresar datos');
+            }
+        }
+    </script>
+    <form>
+        <input type="text" id="nombre" onfocus="vaciar(this)" onblur="verificarentrada(this)" value="nombre">
+        
+        <br>
+        <input type="text" id="mail" onfocus="vaciar(this)" onblur="verificarentrada(this)" value="mail">
+        <br>
+        <input type="button" value="confirmar">
+    </form>-->
+
+    <!--<script>
+        function verificar(control)
+        {
+          if (control.value.length<7 || control.value.length>20)
+          {
+            alert('cantidad de caracteres no valido en la clave(deben ser entre 7-20 caracteres)');
+          }
+        }
+      </script>
+      
+      <form>
+        Ingrese nombre de usuario:
+        <input type="text" id="usuario"><br>
+        Ingrese clave:
+        <input type="password" id="clave" onBlur="verificar(this)"><br>
+        <input type="button" value="confirmar">
+      </form>-->
+
+      <!--script>
+          function pintar(col){
+              document.getElementById('cuadrado1').style.backgroundColor=col;
+          }
+
+      </script>
+      <a href="#" onmouseover="pintar('#f00')" onmouseout="pintar('000')">Rojo</a>
+      <a href="#" onmouseover="pintar('#0f0')" onmouseout="pintar('000')">Verde</a>
+      <a href="#" onmouseover="pintar('#00f')" onmouseout="pintar('000')">Azul</a>
+      <div id="cuadrado1" style="background: #000; width: 200px; height: 200px"></div>-->
+
+      <!--<script>
+        function pintar(objeto,col)
+        {
+          objeto.style.backgroundColor=col;
+        }
+      </script>
+      
+      <table border="1">
+        <tr>
+          <td onMouseOver="pintar(this,'#f00')" 
+              onMouseOut="pintar(this,'#fff')">rojo</td>
+          <td onMouseOver="pintar(this,'#0f0')" 
+              onMouseOut="pintar(this,'#fff')">verde</td>
+          <td onMouseOver="pintar(this,'#00f')" 
+              onMouseOut="pintar(this,'#fff')">azul</td>
+        </tr>
+      </table>-->
+
+      <!--<script>
+        function pintar(objeto,col)
+        {
+          objeto.style.backgroundColor = col;
+        }
+      </script>
+      
+      <table border="1">
+        <tr>
+          <td onMouseOver="pintar(this,'#ff0000')" onMouseOut="pintar(this,'#ffffff')">
+            <a href="http://www.outlook.com">Outlook</a>
+          </td>
+          <td onMouseOver="pintar(this,'#00ff00')" onMouseOut="pintar(this,'#ffffff')">
+            <a href="http://www.yahoo.com">Yahoo</a>
+          </td>
+          <td onMouseOver="pintar(this,'#0000ff')" onMouseOut="pintar(this,'#ffffff')">
+            <a href="http://www.gmail.com">Gmail</a>
+          </td>
+        </tr>
+      </table>-->
+
+      <!--<body onload="activarprimercontrol()">
+        <script>
+            function activarprimercontrol(){
+                document.getElementById('nombre').focus;
+
+            }
+        </script>
+        <form>
+            ingrese su nombre:
+            <input type="text" id="nombre"><br>
+            ingrese su edad:
+            <input type="text" id="edad"><br>
+            <input type="button" value="verificar">
+        </form>-->
+
+        <!--<body onLoad="mostrarMensaje()">
+
+            <script>
+              function mostrarMensaje()
+              {
+                alert('La página está cargada');
+              }
+            </script>
+            
+            <h1>Bienvenidos</h1>
+            </body>-->
+
+            <!--<script>
+                function abrir(){
+                    var ventana=open();
+                    ventana.document.write("estoy escribiendo en la nueva ventana<br>");
+                    ventana.document.write("segunda linea");
+                }
+
+                function abrirparametros(){
+                    var ventana=open('','','status=yes,width=400,height=250,menubar=yes');
+                    ventana.document.write('esto es lo primero que aparece<br>')
+                }
+                function mostraralerta(){
+                    alert('esta ventana de alerta ya la utilizamos en otro problema')
+                }
+                function confirmar(){
+                    var respuesta=confirm('presione alguno de los dos botones');
+                    if (respuesta==true){
+                        alert('presiono aceptar');
+                    }
+                    else{
+                        alert('presiono cancelar');
+                    }
+
+                }
+                function cargarcadena(){
+                    var cad=prompt('cargue una cadena','');
+                    alert('usted ingreso '+cad);
+                }
+            </script>
+            <p>
+                Este programa permite analizar la llamada a diferentes responsabilidades del objetos window
+            </p>
+            <form>
+                <br>
+                <input type="button" value="open()" onclick="abrir()">
+                <br>
+                <input type="button" value="open con parametros" onclick="abrirparametros()">
+                <br>
+                <input type="button" value="alert" onclick="mostraralerta()">
+                <br>
+                <input type="button" value="confirm" onclick="confirmar()">
+                <br>
+                <input type="button" value="prompt" onclick="cargarcadena">
+
+            </form>-->
+
+            <!--<script>
+                function abrirVentana()
+                {
+                  var ventana=open('','','width=600,height=300');
+                }
+              </script>
+              
+              <form>
+                <input type="button" value="abrir ventana" onClick="abrirVentana()">
+              </form>-->
+
+              <!--<script>
+                  function verificarentrada(){
+                      if (window.confirm('desea salir del sitio e ingresar al periodico La nacion?')){
+                          window.location='http://www.lanacion.com.ar';
+            
+                      }
+                      else{
+                          window.alert('no hay problema')
+                      }
+
+                  }
+              </script>
+              <button onclick="verificarentrada()">ingresar a la nacion</button>-->
+
+              <!--<script>
+                function redireccionar()
+                {
+                  var num;
+                  num=Math.random()*3;
+                  num=parseInt(num);  
+                  if (num==0)
+                  {
+                    window.location='http://www.outlook.com';
+                  }
+                  if (num==1)
+                  {
+                    window.location='http://www.yahoo.com';
+                  }
+                  if (num==2)
+                  {
+                    window.location='http://www.gmail.com';
+                  }
+                }
+              </script>
+              
+                <button onClick="redireccionar()">Redireccionar a un servidor de mail</button>-->
+
+                <!--<script>
+                    document.write('valores de la propiedades del objeto screen:<br>');
+                    document.write('availheight :'+screen.availHeight+'<br>');
+                    document.write('availwidth :'+screen.availWidth+'<br>');
+                    document.write('height :'+screen.Height+'<br>');
+                    document.write('width :'+screen.widtht+'<br>');
+                    document.write('colorDepth :'+screen.colorDepth+'<br>');
+            
+                </script>-->
+
+                <!--<script>
+                    function abrirventana()
+                    {
+                      var ventana=open('','','width='+ screen.availWidth +',height='+screen.availHeight/2);
+                    }
+                  </script>
+                  
+                  <form>
+                    <input type="button" value="abrir ventana" onClick="abrirventana()">
+                  </form>-->
+
+                  <!--<script>
+                    document.write('valores de la propiedades del objeto navigator:<br>');
+                    document.write('appname :'+navigator.appName+'<br>');
+                    document.write('appversion :'+navigator.appVersion+'<br>');
+                    document.write('cookieenable :'+navigator.cookieEnabled+'<br>');
+                    document.write('plugins :'+navigator.plugins.length+'<br>');
+            
+                </script>-->
+
+                <!--<script>
+                    function verificar()
+                    {
+                      if (navigator.cookieEnabled==true)
+                      {
+                        alert('Acceso a cookies activadas');
+                      }
+                      else
+                      {
+                        alert('No se encuentran activadas las cookies en este navegador');
+                      }
+                    }
+                  </script>
+                  
+                  <h1>Bienvenidos</h1>-->
+
+                  <!--<script src="funciones.js"></script>
+                  <script>
+                      document.write('la fecha de hoy es:'+retornarfecha());
+                      document.write('<br>');
+                      document.write('la hora es:'+retornarhora());
+                  </script>-->
+
+                  <!--<script>
+                      function cliente(nombre,saldo){
+                          this.nombre=nombre;
+                          this.saldo=saldo;
+                          this.depositar=depositar;
+                          this.extraer=extraer;
+
+                      }
+                      function depositar(dinero){
+                          this.saldo=this.saldo+dinero;
+
+                      }
+                      function extraer(dinero){
+                          this.saldo=this.saldo-dinero;
+                      }
+                      var cliente1;
+                      cliente1=new cliente('diego',1200);
+                      document.write('nombre del cliente: '+cliente1.nombre+'<br>');
+                      document.write('saldo actual: '+cliente1.saldo+'<br>');
+                      cliente1.depositar(120);
+                      document.write('saldo luego de depositar 120: '+cliente1.saldo+'<br>');
+                      cliente1.extraer(1000)
+                      document.write('saldo luego de extraer 1000: '+cliente1.saldo+'<br>');
+
+                  </script>-->
+
+                  <script>
+                    function Suma(valor1,valor2)
+                    {
+                      this.valor1=valor1;
+                      this.valor2=valor2;
+                      this.primerValor=primerValor;
+                      this.segundoValor=segundoValor;
+                      this.retornarResultado=retornarResultado;
+                    }
+                  
+                    function primerValor(valor1)
+                    {
+                      this.valor1=valor1;
+                    }
+                  
+                    function segundoValor(valor2)
+                    {
+                      this.valor2=valor2;
+                    }
+                  
+                    function retornarResultado()
+                    {
+                      return this.valor1+this.valor2;
+                    }
+                  
+                    var suma1;
+                    suma1=new Suma(5,10);
+                    document.write('La suma de 5 y 10 es:'+suma1.retornarResultado()+'<br>');
+                    suma1.primerValor(70);
+                    suma1.segundoValor(30);
+                    document.write('La suma de 70 y 30 es:'+suma1.retornarResultado()+'<br>'); 
+                  </script>
+
+                  
+          
+
+    </body>
+
+
+</html>

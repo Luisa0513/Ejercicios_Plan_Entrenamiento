@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--<script type="module">
+
+        import {sumar, restar} from 'modulo1.js';
+        alert(sumar(3,8));
+        alert(restar(10,3));
+      
+      </script>-->
+
+      <!--<script type="module">
+
+        import Dado from './dado.js';
+        const dado1 = new Dado();
+        alert(dado1.valor);
+        dado1.tirar();
+        alert(dado1.valor);
+      
+      </script>-->
+
+      <!--<script>
+        const mapa1 = new Map();
+        mapa1.set("casa", "house");
+        mapa1.set("rojo", "red");
+        mapa1.set("auto", "car");
+        console.log(mapa1);
+      </script>-->
+
+      <!--<script>
+        const mapa1 = new Map([
+          ["casa", "house"],
+          ["rojo", "red"],
+          ["auto", "car"]
+        ]);
+        const palcastellano = prompt("Ingrese una palabra en castellano:", "");
+        document.write(`La traducción de ${palcastellano} es ${mapa1.get(palcastellano)}`);
+      </script>-->
+
+      <!--<script>
+        const mapa1 = new Map([
+          ["casa", "house"],
+          ["rojo", "red"],
+          ["auto", "car"]
+        ]);
+    
+        document.write("Claves del mapa.<br>")
+        for (let clave of mapa1.keys()) {
+          document.write(clave);
+          document.write("<br>");
+        }
+        document.write("Valores del mapa.<br>")
+        for (let valor of mapa1.values()) {
+          document.write(valor);
+          document.write("<br>");
+        }
+        document.write("Claves y valores del mapa.<br>")
+        for (let [clave, valor] of mapa1) {
+          document.write(clave + '-' + valor);
+          document.write("<br>");
+        }    
+      </script>-->
+
+      <!--<div id="paises"></div>
+
+      <script>
+        addEventListener('DOMContentLoaded', inicio);
+    
+        function inicio() {
+          const paises = new Map([
+            ["Argentina", 45000000],
+            ["España", 46000000],
+            ["Brasil", 190000000],
+            ["Urugual", 3400000]
+          ]);
+    
+          let cadena = '';
+          for (let [pais, cantidad] of paises) {
+            cadena += `<li>${pais} => ${cantidad}</li>`;
+          }
+          document.getElementById("paises").innerHTML = cadena;
+        }
+    
+      </script>-->
+
+      <!--<script>
+        const conjunto1 = new Set();
+        conjunto1.add("C");
+        conjunto1.add("Pascal");
+        conjunto1.add("PHP");
+        conjunto1.add("Python");
+        console.log(conjunto1);
+      </script>-->
+
+      <!--<script>
+        const conjunto1 = new Set();
+        for (let x = 0; x < 10; x++)
+          conjunto1.add(parseInt(Math.random() * 50) + 1);
+        document.write(`La cantidad de números aleatorios distintos son ${conjunto1.size}<br>`)
+        if (conjunto1.has(12))
+          document.write("Si se generó el número 12")
+        else
+          document.write("No se generó el número 12")      
+      </script>-->
+
+      <!--<script>
+        const conjunto1 = new Set(["C", "Pascal", "PHP", "Python"]);
+        for(let elemento of conjunto1)
+          document.write(`${elemento}<br>`);
+      </script>-->
+
+      <!--<script>
+        const feriados = new Set([
+          "1/1/2020",
+          "25/5/2020",
+          "25/12/2020"
+        ]);
+    
+        const dia = parseInt(prompt("Ingrese día:", ""));
+        const mes = parseInt(prompt("Ingrese mes:", ""));
+        const año = parseInt(prompt("Ingrese año:", ""));
+        if (feriados.has(`${dia}/${mes}/${año}`))
+          document.write("La fecha corresponde a un feriado");
+        else
+          document.write("La fecha no corresponde a un feriado");
+      </script>-->
+
+      <!--<script>
+          const conjunto1 = new WeakSet();
+          let usuario1 = {
+              nombre: "juan",
+              puntos: 200
+            };
+            conjunto1.add(usuario1);
+            console.log(conjunto1.has(usuario1)); //true
+            usuario1 = null;
+      </script>-->
+
+      <!--<script>
+        const arreglo1 = [10, 20, 30];
+        const arreglo2 = Array.from(arreglo1);
+        arreglo1.fill(5);
+        console.log(arreglo1); // [5,5,5]
+        console.log(arreglo2); // [10,20,30]
+      </script>-->
+
+      <!--<script>
+        const arreglo1 = [10, 20, 30];
+        const arreglo2 = Array.from(arreglo1, (elemento) => elemento * 2);
+        console.log(arreglo2); // [20, 40, 60]
+      </script>-->
+
+      <!--<script>
+        const arreglo1 = Array.of(10, 20, 30, 40);
+        console.log(arreglo1); // [10, 20, 30, 40]
+      </script>-->
+
+      <!--<script>
+        const lenguajes = ["domingo", "lunes", "martes", "miércoles",
+                           "jueves", "viernes", "sábado"];
+        for (let indice of lenguajes.keys())
+          console.log(indice);
+        for (let valor of lenguajes.values())
+          console.log(valor);
+        for (let componente of lenguajes.entries())
+          console.log(componente); 
+      </script>-->
+
+      <!--<script>
+        const arreglo1 = [9, 9, 9, 9, 9, 9, 9];
+        arreglo1.fill(3);
+        console.log(arreglo1); 
+        arreglo1.fill(0, 3);
+        console.log(arreglo1); 
+        arreglo1.fill(5);
+        console.log(arreglo1); 
+        arreglo1.fill(100, 3, 5);
+        console.log(arreglo1); 
+        arreglo1.fill(5);
+        console.log(arreglo1);
+        arreglo1.fill(100, -2);
+        console.log(arreglo1);
+        arreglo1.fill(5);
+        console.log(arreglo1); 
+        arreglo1.fill(100, -3, -1);
+        console.log(arreglo1);
+      </script>-->
+
+      <!--<script>
+        let arreglo1 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+        arreglo1.copyWithin(0, 5, 8);
+        console.log(arreglo1); 
+        arreglo1 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+        arreglo1.copyWithin(0, 5);
+        console.log(arreglo1);    
+        arreglo1 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+        arreglo1.copyWithin(0, -2);
+        console.log(arreglo1); 
+      </script>-->
+
+      <!--<script>
+        let arreglo1 = [10, 20, 30, 40, 50, 60, 10, 20, 30];
+        console.log(arreglo1.indexOf(30)); 
+        console.log(arreglo1.indexOf(100));
+        console.log(arreglo1.lastIndexOf(20));
+        console.log(arreglo1.indexOf(10, 5));
+        console.log(arreglo1.includes(50));
+        console.log(arreglo1.includes(100)); 
+    
+      </script>-->
+
+      <!--<script>
+        const personas = [
+          {
+            nombre: "pedro",
+            edad: 34
+          },
+          {
+            nombre: "ana",
+            edad: 54
+          },
+          {
+            nombre: "carlos",
+            edad: 12
+          },
+          {
+            nombre: "maría",
+            edad: 22
+          },
+          {
+            nombre: "oscar",
+            edad: 72
+          }
+        ];
+    
+        let per = personas.find((persona, indice) => persona.nombre == "maría");
+        if (per != undefined)
+          console.log(per);
+        else
+          console.log("No se encuentra maría en el vector de objetos");
+        let indice = personas.findIndex((persona, indice) => persona.nombre == "maría");
+        if (indice != -1)
+          console.log("Se encuentra en la posción "+indice+" del arreglo.");
+        else
+          console.log("No se encuentra maría en el vector de objetos");
+    
+      </script>-->
+
+      <!--<script>
+        const personas = [
+          {
+            nombre: "pedro",
+            edad: 34
+          },
+          {
+            nombre: "ana",
+            edad: 54
+          },
+          {
+            nombre: "carlos",
+            edad: 12
+          },
+          {
+            nombre: "maría",
+            edad: 22
+          },
+          {
+            nombre: "oscar",
+            edad: 72
+          }
+        ];
+        
+        console.log(personas.every((elemento, indice, arreglo) => elemento.edad < 100)); 
+        console.log(personas.every((elemento, indice, arreglo) => elemento.edad >= 18)); 
+        console.log(personas.every((elemento, indice, arreglo) => elemento.nombre.length <= 6)); 
+        console.log(personas.some((elemento, indice, arreglo) => elemento.edad == 100));
+        console.log(personas.some((elemento, indice, arreglo) => elemento.edad <= 18)); 
+      </script>-->
+
+      <!--<script>
+        const personas = [
+          {
+            nombre: "pedro",
+            edad: 34
+          },
+          {
+            nombre: "ana",
+            edad: 54
+          },
+          {
+            nombre: "carlos",
+            edad: 12
+          },
+          {
+            nombre: "maría",
+            edad: 22
+          },
+          {
+            nombre: "oscar",
+            edad: 72
+          }
+        ];
+        
+        const personasmayores = personas.filter((elemento, indice, arreglo) => elemento.edad >= 18);
+        console.log(personasmayores);
+      </script>-->
+
+      <!--<script>
+        const arreglo1 = [1, 2, 3, 4, 5];
+        const arreglo2 = arreglo1.map((elemento, indice, arreglo) => elemento ** 2);
+        console.log(arreglo2); 
+      </script>-->
+
+      <!--<script>
+        const arreglo1 = [1, 2, 73, 3, 4, 120, 5, 18];
+        const cantidad = arreglo1.reduce((acumulador, elemento, indice, arreglo) => {
+          if (elemento < 10)
+            acumulador += elemento;
+          return acumulador;
+        }, 0);
+        console.log(cantidad);
+      </script>-->
+
+      <!--<script>
+
+        fetch("datos.php")
+          .then(response=>response.json())
+          .then(datos=>console.log(datos));
+    
+      </script>-->
+
+      <!--</div>
+
+      <script>
+
+        fetch("https://apis.datos.gob.ar/georef/api/provincias")
+          .then(response => response.json())
+          .then(datos => {
+            for (let provincia of datos.provincias)
+              document.write(`${provincia.id} ${provincia.nombre} <br>`);
+          });
+    
+      </script>-->
+
+      <!--<div>
+        <button id="boton1">Aries</button>
+        <button id="boton2">Tauro</button>
+        <button id="boton3">Geminis</button>
+      </div>
+      <div id="contenido"></div>
+    
+      </div>
+
+      <script>
+        addEventListener("DOMContentLoaded", () => {
+          document.getElementById("boton1").addEventListener("click", () => mostrar('aries.txt'));
+          document.getElementById("boton2").addEventListener("click", () => mostrar('tauro.txt'));
+          document.getElementById("boton3").addEventListener("click", () => mostrar('geminis.txt'));
+        });
+    
+        function mostrar(signo) {
+          fetch(signo)
+            .then(response => response.text())
+            .then(datos => document.getElementById("contenido").innerText = datos);
+        }
+    
+      </script>-->
+
+      <!--<div class="container">
+        <div class="row">
+          <table class="table table-striped" id="tabla1">
+          </table>
+        </div>
+      </div>
+
+      <script>
+        addEventListener("DOMContentLoaded", () => {
+          fetch("https://jsonplaceholder.typicode.com/users")
+            .then(response => response.json())
+            .then(datos => {
+              let cad = '<tr><th>Nombre</th><th>Email</th><th>Télefono</th></tr>';
+              for (let usuario of datos) {
+                cad += `<tr><td>${usuario.name}</td>
+                <td>${usuario.email}</td>
+                <td>${usuario.phone}</td></tr>`;
+              }
+              document.getElementById("tabla1").innerHTML = cad;
+            });
+        });
+      </script>-->
+
+      <!--<div id="informacion">
+
+      </div>
+
+
+      <script>
+        addEventListener("DOMContentLoaded", () => {
+          fetch("https://freegeoip.app/json/")
+            .then(response => response.json())
+            .then(datos => {
+              document.getElementById("informacion").innerHTML = 
+                `<p>Pais:${datos.country_name}</p>
+                 <p>Ciudad:${datos.city}</p>
+                 <p>Código postal:${datos.zip_code}</p>
+                 <p>Ip:${datos.ip}</p>`;
+            });
+        });
+      </script>-->
+
+      <!--<div>
+        <button id="boton1">Aries</button>
+        <button id="boton2">Tauro</button>
+        <button id="boton3">Geminis</button>
+      </div>
+      <img id="foto">
+    
+      </div>
+
+      <script>
+        addEventListener("DOMContentLoaded", () => {
+          document.getElementById("boton1").addEventListener("click", () => mostrar('aries.png'));
+          document.getElementById("boton2").addEventListener("click", () => mostrar('tauro.png'));
+          document.getElementById("boton3").addEventListener("click", () => mostrar('geminis.png'));
+        });
+    
+        function mostrar(signo) {
+          fetch(signo)
+            .then(response => response.blob())
+            .then(datos => document.getElementById("foto").setAttribute('src', URL.createObjectURL(datos)));
+        }
+    
+      </script>-->
+
+      <!--<p><strong>Nombre:</strong><span id="nombre"></span></p>
+      <img id="foto">
+
+      </div>
+
+      <script>
+        addEventListener("DOMContentLoaded", () => {
+          fetch('https://randomuser.me/api/')
+            .then(response => response.json())
+            .then((datos) => {
+              document.getElementById("nombre").innerText = datos.results[0].name.first
+                + ', ' + datos.results[0].name.last;
+              let imagen;
+              if (datos.results[0].gender == "female")
+                imagen = "mujer.png";
+              else
+                imagen = "hombre.png";
+              fetch(imagen)
+                .then(response => response.blob())
+                .then(datos => document.getElementById("foto").setAttribute('src', URL.createObjectURL(datos)));
+            })
+        });
+    
+      </script>-->
+
+      <!--<div class="container h-100">
+        <div class="row">
+          <form id="formulario1">
+            <div class="form-group">
+              <label for="descripcion">Descripción del artículo</label>
+              <input type="text" class="form-control" id="descripcion" name="descripcion" required>
+            </div>
+            <div class="form-group">
+              <label for="precio">Precio:</label>
+              <input type="number" class="form-control" id="precio" name="precio" required>
+            </div>
+            <div class="form-group">
+              <button type="button" id="boton1" class="btn btn-primary">Nuevo artículo</button>
+            </div>
+          </form>
+    
+          <table class="table table-striped" id="tabla1">
+          </table>
+        </div>
+      </div>
+
+
+      <script>
+        addEventListener("DOMContentLoaded", () => {
+          listarArticulos();
+          document.getElementById("boton1").addEventListener("click", () => agregar());
+        });
+    
+        function agregar() {
+          const datos = new URLSearchParams(new FormData(document.getElementById("formulario1")));
+          fetch('nuevoarticulo.php', {
+            method: 'POST',
+            body: datos
+          })
+            .then(response => response.json())
+            .then(datos => listarArticulos());
+        }
+    
+        function listarArticulos() {
+          fetch("listadoarticulos.php")
+            .then(response => response.json())
+            .then(datos => {
+              let cad = '<tr><th>Código</th><th>Descripción</th><th>Precio</th></tr>';
+              for (let articulo of datos) {
+                cad += `<tr><td>${articulo.codigo}</td>
+                <td>${articulo.descripcion}</td>
+                <td>${articulo.precio}</td></tr>`;
+              }
+              document.getElementById("tabla1").innerHTML = cad;
+            });
+        }
+      </script>-->
+
+      <p>Foto:<input type="file" id="foto" required></p>
+      <p><button type="button" id="boton1" >Subir foto</button></p>
+      <p><img id="imagen"></p>
+
+      <script>
+        addEventListener("DOMContentLoaded", () => {
+          document.getElementById("boton1").addEventListener("click", () => agregar());
+        });
+    
+        function agregar() {
+          let fd = new FormData();
+          fd.append("foto", document.getElementById("foto").files[0]);
+          fetch('subirfoto.php', {
+            method: 'POST',
+            body: fd
+          })
+            .then(response => response.json())
+            .then(datos => {
+              if (datos.resultado == "Ok")
+                document.getElementById("imagen").setAttribute("src", document.getElementById("foto").files[0].name);
+            })
+        }
+      </script>
+    
+    
+    
+
+
+      
+    
+</body>
+</html>

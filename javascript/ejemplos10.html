@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--<script>
+        function generarLista(vec, tipo='<ul>') {
+          let lista=tipo;
+          for(let x=0;x<vec.length;x++)
+            lista += `<li>${vec[x]}</li>`;
+          if (tipo=='<ul>') 
+            lista += '</ul>';
+          else
+            lista += '</ol>'
+          return lista;
+        }
+      
+        const opciones1=['opción 1','opción 2','opción 3','opción 4','opción 5'];
+        document.write(generarLista(opciones1));
+      
+        const opciones2=['opción a','opción b','opción c','opción d'];
+        document.write(generarLista(opciones2,'<ol>'));
+      
+      </script>-->
+
+      <!--<script>
+
+        function tablaMultiplicar(tabla=2, cantidad=10) {
+          document.write(`Tabla del ${tabla}<br>`)
+          for(let x=1;x<=cantidad;x++){
+            v=x*tabla;
+            document.write(`${tabla} * ${x} = ${v}<br>`);
+          }
+        }
+      
+        tablaMultiplicar();
+        tablaMultiplicar(3);
+        tablaMultiplicar(5,20);  
+      
+      </script>-->
+
+      <!--<script>
+          function sumar(...valores){
+              let suma=0;
+              for (let x=0;x<valores.length;x++)
+                  suma+=valores[x];
+                  return suma;
+              
+            }
+              document.write(sumar(10,2,44,3));
+              document.write('<br>');
+              document.write(sumar(1,2));
+              document.write('<br>');
+              document.write(sumar());
+              document.write('<br>');
+          
+      </script>-->
+
+      <!--<script>
+
+        function ordenar(...lista) {
+          return lista.sort(
+                   function(x,y){
+                     if (x>y) 
+                       return 1; 
+                     else 
+                       return -1})
+        }
+      
+        const eleordenados=ordenar(10, 3, 22, 1);
+        document.write(eleordenados.toString());
+        </script>-->
+
+        <!--<script>
+            function sumar(x,y,z){
+                return x+y+z;
+            }
+            const vec=[10,20,30];
+            const s=sumar(...vec);
+            document.write(s);
+        </script>-->
+
+        <!--<script>
+
+            const vec = [10, 60, 2, 500, 50, 18];
+            const mayor = Math.max(...vec);
+            document.write(`el mayor de ${vec.toString()} es ${mayor}`);
+          
+          </script>-->
+
+          <!--<script>
+              const vec =[100,22,17,50,3];
+              vec.sort((x,y)=>{
+                  if (x>y){
+                      return 1;
+                  }
+                  else{
+                      return -1;
+                  }
+              }
+
+              )
+              document.write(vec.toString());
+          </script>-->
+
+          <!--<script>
+
+            const vec = [100, 22, 17, 50, 3, 78];
+            const pares = vec.filter( elemento => elemento%2 == 0);
+            document.write('Vector completo:'+vec.toString());
+            document.write('<br>');
+            document.write('Vector generado con elementos pares:'+pares.toString());
+          
+          </script>-->
+
+          <!--<script>
+            window.addEventListener(
+              'DOMContentLoaded',
+              setTimeout( () => alert('pasó 3 segundos desde que se cargó la página'), 3000),
+              false);
+          </script>-->
+
+          <!--<script>
+  
+            const aleatorio = valor => Math.trunc(Math.random() * valor)+1;
+          
+            document.write(aleatorio(3));
+            document.write('<br>');
+            document.write(aleatorio(50));
+            document.write('<br>');
+            document.write(aleatorio(100));
+            document.write('<br>');    
+          </script>-->
+
+          <!--<script>
+  
+            const cliente1 = {
+               nombre: 'Juan',
+               saldo: 0,
+               imprimir()
+               {
+                 document.write(this.nombre+'<br>');
+                 document.write(this.saldo+'<br>');
+               },
+               depositar(monto) {
+                 this.saldo=this.saldo+monto;
+               },
+               extraer(monto) {
+                 this.saldo=this.saldo-monto;
+               }                  
+            };
+          
+            cliente1.imprimir();
+            cliente1.depositar(1000);
+            document.write('Estado luego de depositar 1000 pesos</br>');
+            cliente1.imprimir();
+            cliente1.extraer(200);
+            document.write('Estado luego de extraer 200 pesos</br>');
+            cliente1.imprimir();
+            
+          </script>-->
+
+          <!--<script>
+  
+            const jugador1 = {
+              nombre: 'ana',
+              puntos: 0,
+              imprimir() {
+                document.write('Nombre:'+this.nombre+'<br>');
+                document.write('Puntos:'+this.puntos+'<br>');
+              },
+              aumentarpuntos(cant) {
+                this.puntos=this.puntos+cant;
+              },
+              verificarsigano() {
+                if (this.puntos>1000)
+                  document.write('Gano<br>');
+                else
+                  document.write('No gano<br>');
+              }
+            };
+          
+            jugador1.imprimir();
+            jugador1.aumentarpuntos(500);
+            jugador1.verificarsigano();
+            jugador1.aumentarpuntos(501);
+            jugador1.verificarsigano();  
+            jugador1.imprimir();
+          
+          </script>-->
+
+          <!--<script>
+  
+            class Cliente {
+              constructor(nombre, saldo) {
+                this.nombre=nombre;
+                this.saldo=saldo;      
+              }
+          
+              depositar(dinero)
+              {
+                this.saldo=this.saldo+dinero;
+              }    
+          
+              extraer(dinero)
+              {
+                this.saldo=this.saldo-dinero;
+              }    
+            }
+          
+            const cliente1=new Cliente('diego',1200);
+            document.write('Nombre del cliente:'+cliente1.nombre+'<br>');
+            document.write('Saldo actual:'+cliente1.saldo+'<br>');
+            cliente1.depositar(120);
+            document.write('Saldo luego de depositar $120'+cliente1.saldo+'<br>');
+            cliente1.extraer(1000);
+            document.write('Saldo luego de extraer $1000'+cliente1.saldo+'<br>'); 
+          
+            const cliente2=new Cliente('ana',100);
+            document.write('Nombre del cliente:'+cliente2.nombre+'<br>');
+            document.write('Saldo actual:'+cliente2.saldo+'<br>');
+            cliente2.depositar(200);
+            document.write('Saldo luego de depositar $200'+cliente2.saldo+'<br>');  
+          </script>-->
+
+          <!--<div id="menu"></div>
+
+          <script>
+
+            class Menu {
+              constructor() {
+                this.enlaces=[];
+                this.descripcion=[];
+              }
+            
+              insertar(enlace, descripcion) {
+                this.enlaces.push(enlace);
+                this.descripcion.push(descripcion);
+              }
+            
+              mostrar(elemento) {
+                let cadena='<div>';
+                for(let x=0;x<this.enlaces.length;x++) 
+                  cadena += `[<a href="${this.enlaces[x]}">${this.descripcion[x]}</a>]`;
+                cadena += '</div>';
+                document.getElementById(elemento).innerHTML=cadena;
+              }
+            }
+            
+            window.addEventListener('DOMContentLoaded', iniciar, false);
+            
+            function iniciar() {
+              const menu=new Menu();
+              menu.insertar("http://www.google.com","Google");
+              menu.insertar("http://www.bing.com","Bing");
+              menu.insertar("http://www.yahoo.com","Yahoo");
+              menu.mostrar('menu');
+            }
+            </script>-->
+
+            <!--<script>
+
+                class ListaOrdenada {
+                  constructor() {
+                    this.opciones=[];
+                  }
+              
+                  agregar(elemento) {
+                    this.opciones.push(elemento);
+                  }
+              
+                  imprimir() {
+                    let lista='<ol>';
+                    for(let x=0;x<this.opciones.length;x++) 
+                      lista += `<li>${this.opciones[x]}</li>`;
+                    lista += '</ol>';
+                    document.write(lista);
+                  }
+                }
+              
+                const lista1 =new ListaOrdenada();
+                lista1.agregar('Opcion a');
+                lista1.agregar('Opcion b');
+                lista1.agregar('Opcion c');
+                lista1.agregar('Opcion d');      
+                lista1.imprimir();
+              
+              </script>-->
+
+              <!--<script>
+
+                class Persona {
+                  constructor(nombre, edad) {
+                    this.nombre = nombre;
+                    this.edad = edad;
+                  }
+              
+                  imprimir() {
+                    document.write(`Nombre: ${this.nombre}<br>`);
+                    document.write(`Edad: ${this.edad}<br>`);
+                  }    
+                }
+              
+                class Empleado extends Persona {
+                  constructor(nombre, edad, sueldo) {
+                    super(nombre, edad);
+                    this.sueldo = sueldo;
+                  }
+              
+                  imprimir() {
+                    super.imprimir();
+                    document.write(`Sueldo: ${this.sueldo}<br>`);      
+                  }
+              
+                  pagaImpuestos() {
+                    if (this.sueldo>5000)
+                      document.write(`${this.nombre} debe pagar impuestos<br>`);
+                    else
+                      document.write(`${this.nombre} no debe pagar impuestos<br>`);      
+                  }
+                }
+              
+              
+                const persona1=new Persona('Juan', 44);
+                persona1.imprimir();
+                document.write('<hr>');
+              
+                const empleado1=new Empleado('Juan', 44, 7000);
+                empleado1.imprimir();
+                empleado1.pagaImpuestos();
+              
+              </script>-->
+
+              <!--<script>
+
+                class Calculadora {
+                  constructor(x1, x2) {
+                    this.x1 = x1;
+                    this.x2 = x2;
+                    this.resultado = null;
+                  }
+              
+                  sumar() {
+                    this.resultado = this.x1 + this.x2;
+                    document.write(`La suma de ${this.x1} y ${this.x2} es `);
+                    this.imprimir();
+                  }
+              
+                  restar() {
+                    this.resultado = this.x1 - this.x2;
+                    document.write(`La resta de ${this.x1} y ${this.x2} es `);
+                    this.imprimir();      
+                  }
+              
+                  multiplicar() {
+                    this.resultado = this.x1 * this.x2;
+                    document.write(`La multiplicación de ${this.x1} y ${this.x2} es `);
+                    this.imprimir();      
+                  }
+               
+                  dividir() {
+                    this.resultado = this.x1 / this.x2;
+                    document.write(`La división de ${this.x1} y ${this.x2} es `);
+                    this.imprimir();      
+                  }
+              
+                  imprimir() {
+                    document.write(this.resultado+'<br>');
+                  }
+                }
+              
+                class CalculadoraCientifica extends Calculadora {
+                  cuadrado() {
+                    this.resultado = this.x1 * this.x1;
+                    document.write(`${this.x1} elevado al cuadrado es `);
+                    this.imprimir();
+                  }
+              
+                  raizCuadrada() {
+                    this.resultado = Math.sqrt(this.x1);
+                    document.write(`La raiz cuadrada de ${this.x1}  es `);
+                    this.imprimir();
+                  }
+                }
+              
+                const calculadora1=new Calculadora(100, 20);
+                calculadora1.sumar();
+                calculadora1.restar();
+                calculadora1.multiplicar();
+                calculadora1.dividir();  
+              
+                const calculadoraCientifica1=new CalculadoraCientifica(6, 2);
+                calculadoraCientifica1.sumar();
+                calculadoraCientifica1.restar();
+                calculadoraCientifica1.cuadrado();
+                calculadoraCientifica1.raizCuadrada();
+              
+              </script>-->
+
+              <!--<script>
+                class Dado {
+                  constructor() {
+                    this._valor=1;
+                  }
+                  
+                  get valor() {
+                    return this._valor;
+                  }
+                  
+                  set valor(v) {
+                    this._valor=v;
+                  }
+                  
+                  imprimir() {
+                    document.write(this.valor+'<br>');
+                  }
+                }
+                
+                const dado1=new Dado();
+                dado1.imprimir();
+                dado1.valor=6;
+                dado1.imprimir();
+                
+              </script>-->
+
+              <!--<script>
+                class Persona {
+                  constructor(nom,ed) {
+                    this._nombre=null;
+                    this._edad=0;
+                  }
+                  
+                  get nombre() {
+                    return this._nombre;
+                  }
+                  
+                  set nombre(n) {
+                    this._nombre=n;
+                  }
+              
+                  get edad() {
+                    return this._edad;
+                  }
+                  
+                  set edad(e) {
+                    if (e>=0)
+                      this._edad=e;
+                    else
+                    throw "La edad no puede ser negativa";
+                  }
+                  
+                  imprimir() {
+                    document.write(`Nombre:${this.nombre} y Edad:${this.edad}`);
+                  }
+                }
+                
+                const persona1=new Persona();
+                persona1.nombre='Pablo Rodriguez';
+                persona1.edad=-43;
+                persona1.imprimir();
+                
+              </script>-->
+
+              <!--<script>
+
+                class Matematica {
+                  static mayor(v1,v2) {
+                    if (v1>v2)
+                      return v1;
+                    else
+                      return v2;
+                  }
+              
+                  static menor(v1,v2) {
+                    if (v1<v2)
+                      return v1;
+                    else
+                      return v2;
+                  }
+              
+                  static aleatorio(inicio, fin) {
+                    return Math.trunc((Math.random()*(fin+1-inicio))+inicio);
+                  }
+                }
+                
+                let x1=Matematica.aleatorio(1,10);
+                let x2=Matematica.aleatorio(1,10);
+                document.write(`El mayor entre ${x1} y ${x2} es ${Matematica.mayor(x1,x2)} <br>`);
+                document.write(`El menor entre ${x1} y ${x2} es ${Matematica.menor(x1,x2)}`);
+              
+              </script>-->
+
+              <!--<script>
+
+                class Fecha {
+                  static retornarMes(mes) {
+                    switch (mes) {
+                      case 1: return 'Enero';
+                      case 2: return 'Febrero';
+                      case 3: return 'Marzo';
+                      case 4: return 'Abril';
+                      case 5: return 'Mayo';
+                      case 6: return 'Junio';
+                      case 7: return 'Julio';
+                      case 8: return 'Agosto';
+                      case 9: return 'Septiembre';
+                      case 10: return 'Octubre';
+                      case 11: return 'Noviembre';
+                      case 12: return 'Diciembre';        
+                    }
+                  }
+              
+                  static fechaCompleta() {
+                    const fecha=new Date();
+                    return `${fecha.getDate()}-${fecha.getMonth()+1}-${fecha.getFullYear()}`;
+                  }
+                }
+              
+                document.write(`La fecha actual es ${Fecha.fechaCompleta()}<br>`);
+                document.write(Fecha.retornarMes(12));
+              
+              </script>-->
+
+              <!--<script>
+
+                const personas = [
+                                   {
+                                     nombre:'juan',
+                                     edad:45
+                                   },
+                                   {
+                                     nombre:'ana',
+                                     edad:12
+                                   },
+                                   {
+                                     nombre:'luis',
+                                     edad:16
+                                   },
+                                   {
+                                     nombre:'cristina',
+                                     edad:76
+                                   }
+                                 ];
+                                 
+                  document.write('<h1>Personas mayores de edad.</h1>');
+                  for(let persona of personas) 
+                    if (persona.edad>=18) 
+                      document.write(`${persona.nombre} tiene ${persona.edad} años.<br>`);
+                
+                </script>-->
+
+                <!--<script>
+
+                    const vector=[10, 40, 60, 5];
+                    for(let [indice, valor] of vector.entries())
+                      document.write(`${valor} ocupa la posición ${indice}<br>`);
+                  
+                  </script>-->
+
+                  <script>
+
+                    const articulos = [
+                      {
+                        nombre:'sandía',
+                        precio:12
+                      },
+                      {
+                        nombre:'manzanas',
+                        precio:52
+                      },
+                      {
+                        nombre:'peras',
+                        precio:40
+                      },
+                      {
+                        nombre:'naranjas',
+                        precio:35
+                      }    
+                    ]
+                    
+                    document.write('<h1>Listado completo de artículos.</h1>');
+                    for(let articulo of articulos)
+                      document.write(`${articulo.nombre} - ${articulo.precio}<br>`);
+                    
+                    document.write('<h1>Listado de artículos con un precio superior a 30.</h1>');  
+                    for(let articulo of articulos)
+                      if (articulo.precio>30)
+                        document.write(`${articulo.nombre} - ${articulo.precio}<br>`);
+                  
+                  </script>
+          
+    
+</body>
+</html>

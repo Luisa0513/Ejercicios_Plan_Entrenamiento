@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--<style>
+        .boton{
+          width:50px;
+          height:50px;
+        }
+        #resultado {
+          font-size:40px;
+        }
+      </style> -->
+
+      <style>
+        .boton {
+          width: 50px;
+          height: 50px;
+          margin: 10px;
+        }
+      </style>
+</head>
+<body>
+    <!--<script>
+        var f1=function(x,y){
+            var s=x+y;
+            return s;
+        }
+        document.write(f1(4,6)+'<br>');
+        var f2=f1;
+        document.write(f2(3,3)+'<br>');
+    </script>-->
+
+    <!--<script>
+        function calcular(x,y,fu)
+        {
+          var resu=fu(x,y);
+          return resu;
+        }
+      
+        var s1=calcular(10,5,function (v1,v2) {
+          return v1+v2;
+        });
+        
+        document.write(s1+'<br>');
+      
+        var s2=calcular(10,5,function (v1,v2) {
+          return v1-v2;
+        });
+        
+        document.write(s2+'<br>');
+      </script>-->
+
+      <!--<script>
+        function sumar(v1,v2) 
+        {
+          return v1+v2;
+        }
+      
+        function restar(v1,v2) 
+        {
+          return v1-v2;
+        }
+      
+        function calcular(x,y,fu)
+        {
+          var resu=fu(x,y);
+          return resu;
+        }
+      
+        var s1=calcular(10,5,sumar);
+        
+        document.write(s1+'<br>');
+      
+        var s2=calcular(10,3,restar);
+        
+        document.write(s2+'<br>');
+      </script>-->
+
+      <!--<form method="post" action="procesar.php" onsubmit="validar();" id="formulario1">
+        Ingrese nombre:
+        <input type="text" id="usuario" name="usuario" size="20">
+        <br>
+        Ingrese clave:
+        <input type="password" id="clave" name="clave" size="20">
+        <br>
+        <input type="submit" id="confirmar" name="confirmar" value="Confirmar">
+      </form>
+      
+      <script>
+        function validar()
+        {
+           var usu=document.getElementById("usuario").value;
+           var cla=document.getElementById("clave").value;
+           if (usu.length==0 || cla.length==0)
+           {
+             alert('El nombre de usuario o clave está vacío');
+             return false;
+           }
+           else
+             return true;
+        }
+      </script>-->
+
+      <!--<form method="post" action="procesar.php" id="formulario1">
+        Ingrese nombre:
+        <input type="text" id="usuario" name="usuario" size="20">
+        <br>
+        Ingrese clave:
+        <input type="password" id="clave" name="clave" size="20">
+        <br>
+        <input type="submit" id="confirmar" name="confirmar" value="Confirmar">
+      </form>  
+      
+      <script>
+       window.addEventListener('load',inicio,false);
+      
+      function inicio()
+      {
+        document.getElementById("formulario1").addEventListener('submit',validar,false);
+      }
+      
+      function validar(evt)
+      {
+         var usu=document.getElementById("usuario").value;
+         var cla=document.getElementById("clave").value;
+         if (usu.length==0 || cla.length==0)
+         {
+           alert('El nombre de usuario o clave está vacío');
+           evt.preventDefault();
+         }
+      }
+      </script>-->
+
+      <!--<div style="width:200px;height:200px;background:#ffff00" id="recuadro1">
+        Prueba del evento click
+      </div>
+      <div style="width:200px;height:200px;background:#ff5500" id="recuadro2">
+        Prueba del evento dblclick
+      </div>  
+    
+    <script>
+      addEventListener('DOMContentLoaded',inicio,false);
+    
+      function inicio()
+      {
+        document.getElementById('recuadro1').addEventListener('click',presion1,false);
+        document.getElementById('recuadro2').addEventListener('dblclick',presion2,false);
+      }
+    
+      function presion1()
+      {
+        alert('se hizo click');
+      }
+    
+      function presion2()
+      {
+        alert('se hizo doble click');
+      }
+    </script>-->
+
+    <!--<div id="numero">2</div>
+
+    <script>
+        addEventListener('DOMContentLoaded',inicio,false);
+      
+        function inicio()
+        {
+          document.getElementById('numero').addEventListener('dblclick',duplicar,false);
+        }
+      
+        function duplicar()
+        {
+          var valor=document.getElementById('numero').innerHTML;
+          valor=parseInt(valor);
+          var resultado=valor*2;
+          document.getElementById('numero').innerHTML=resultado;
+      
+        }
+      </script>-->
+
+      <!--<p>Presione el recuadro amarillo sin soltar el botón del mouse.</p>
+      <div style="width:200px;height:200px;background:#ffff00" id="recuadro1">
+      </div>
+      <p>Presione el recuadro naranja y suelte el botón del mouse.</p>
+      <div style="width:200px;height:200px;background:#ff5500" id="recuadro2">
+      </div>
+
+      <script>
+        addEventListener('DOMContentLoaded',inicio,false);
+      
+        function inicio()
+        {
+          document.getElementById('recuadro1').addEventListener('mousedown',presion1,false);
+          document.getElementById('recuadro2').addEventListener('mouseup',presion2,false);
+        }
+      
+        function presion1()
+        {
+          document.getElementById('recuadro1').innerHTML='Se presiono el mouse y todavía no se soltó';
+        }
+      
+        function presion2()
+        {
+          document.getElementById('recuadro2').innerHTML='Se presiono el mouse y se soltó';
+        }
+      </script>-->
+
+      <!--<div style="width:200px;height:200px;background:#ff0000" id="recuadro1">
+      </div>
+
+      <script>
+        addEventListener('DOMContentLoaded',inicio,false);
+      
+        function inicio()
+        {
+          document.getElementById('recuadro1').addEventListener('mousedown',presion1,false);
+          document.getElementById('recuadro1').addEventListener('mouseup',presion2,false);
+        }
+      
+        function presion1()
+        {
+          document.getElementById('recuadro1').style.backgroundColor='#ffff00';
+        }
+      
+        function presion2()
+        {
+          document.getElementById('recuadro1').style.backgroundColor='#ff0000';
+        }
+      </script>-->
+
+      <!--<div style="width:200px;height:200px;background:#0000ff" id="recuadro1">    
+      </div>
+  
+
+      <script>
+        addEventListener('DOMContentLoaded',inicio,false);
+      
+        function inicio()
+        {
+          document.getElementById('recuadro1').addEventListener('mouseover',entrada,false);
+          document.getElementById('recuadro1').addEventListener('mouseout',salida,false);
+        }
+      
+        function entrada()
+        {
+          document.getElementById('recuadro1').style.borderRadius='30px';
+        }
+      
+        function salida()
+        {
+          document.getElementById('recuadro1').style.borderRadius='0px';
+        }
+      </script>-->
+
+      <!--<h1 id="titulo">Titulo principal</h1>
+
+
+      <script>
+        addEventListener('DOMContentLoaded',inicio,false);
+      
+        function inicio()
+        {
+          document.getElementById('titulo').addEventListener('mouseover',entrada,false);
+          document.getElementById('titulo').addEventListener('mouseout',salida,false);
+        }
+      
+        function entrada()
+        {
+          document.getElementById('titulo').style.color='#ff0000';
+          document.getElementById('titulo').style.backgroundColor='#ffff00';
+        }
+      
+        function salida()
+        {
+          document.getElementById('titulo').style.color='#000000';
+          document.getElementById('titulo').style.backgroundColor='#ffffff';
+        }
+      </script>-->
+
+      <!--<div style="width:200px;height:200px;background:#0000ff" id="recuadro1">
+      </div>
+      <p id="cantidad">0</p>
+
+      <script>
+        addEventListener('DOMContentLoaded',inicio,false);
+      
+        function inicio()
+        {
+          document.getElementById('recuadro1').addEventListener('mousemove',mover,false);
+        }
+      
+        function mover()
+        {
+          var x=parseInt(document.getElementById('cantidad').innerHTML);
+          x++;
+          document.getElementById('cantidad').innerHTML=x;
+        }
+      </script>-->
+
+      <!--<input type="text" id="texto" maxlength="140" size="140">
+      <br>
+      <p>Máxima cantidad de caracteres disponibles:<span id="cantidad">140</span></p>
+
+      <script>
+        addEventListener('DOMContentLoaded',inicio,false);
+      
+        function inicio()
+        {
+          document.getElementById('texto').addEventListener('keyup',presion,false);
+        }
+      
+        function presion()
+        {
+          var canti=document.getElementById('texto').value.length;
+          var disponibles=140-parseInt(canti);
+          document.getElementById('cantidad').innerHTML=disponibles;
+        }
+      </script>-->
+
+      <!--Evento change del checkbox:
+      <input type="checkbox" id="checkbox1" name="checkbox1" checked>
+      <br>
+      Evento change del radio:<br>
+      <input type="radio" name="radio1" id="radioa"><br>
+      <input type="radio" name="radio1" id="radiob"><br>
+      <input type="radio" name="radio1" id="radioc"><br>
+      Evento change del select:
+      <select name="select1" id="select1">
+      <option value="argentina">Argentina</option>
+      <option value="chile">Chile</option>
+      <option value="uruguay">Uruguay</option>
+      <option value="paraguay">Paraguay</option>
+      <option value="bolivia">Bolivia</option>
+      </select>
+      <br>
+      <input type="text" name="text1" id="text1">
+      <br>
+      <textarea name="text1" id="textarea1" rows="6" cols="80"></textarea>
+      <br>
+
+
+      <script>
+        addEventListener('DOMContentLoaded',inicio,false);
+      
+        function inicio()
+        {
+          document.getElementById('checkbox1').addEventListener('change',cambiocheckbox,false);
+          document.getElementById('radioa').addEventListener('change',cambioradio,false);
+          document.getElementById('radiob').addEventListener('change',cambioradio,false);
+          document.getElementById('radioc').addEventListener('change',cambioradio,false);
+          document.getElementById('select1').addEventListener('change',cambioselect,false);
+          document.getElementById('text1').addEventListener('change',cambiotext,false);
+          document.getElementById('textarea1').addEventListener('change',cambiotextarea,false);
+        }
+      
+        function cambiocheckbox()
+        {
+        alert(document.getElementById('checkbox1').checked);
+        }
+      
+        function cambioradio()
+        {
+          alert(document.getElementById('radioa').checked+' '+
+                document.getElementById('radiob').checked+' '+
+                document.getElementById('radioc').checked);
+        }
+      
+        function cambioselect()
+        {
+          alert(document.getElementById('select1').value);
+        }
+      
+        function cambiotext()
+        {
+          alert(document.getElementById('text1').value);
+        }
+      
+        function cambiotextarea()
+        {
+          alert(document.getElementById('textarea1').value);
+        }
+      </script>-->
+
+      <!--<input type="checkbox" id="checkbox1" name="checkbox1">
+      Confirma los términos y condiciones?
+      <br>
+      <input type="button" id="boton1" name="boton1" value="confirmar" disabled>
+
+
+      <script>
+        addEventListener('DOMContentLoaded',inicio,false);
+        
+        function inicio()
+        {
+          document.getElementById('checkbox1').addEventListener('change',seleccion,false);
+        }
+      
+        function seleccion()
+        {
+      
+          if (document.getElementById('checkbox1').checked==true)
+          {
+            document.getElementById('boton1').disabled=false;
+          } 
+          else    
+            document.getElementById('boton1').disabled=true;
+        }
+      </script>-->
+
+      <!--<input type="text" id="text1" name="text1" size="30">
+      <br>
+      <input type="text" id="text2" name="text2" size="30">
+
+      <script>
+        addEventListener('DOMContentLoaded',inicio,false);
+      
+        function inicio()
+        {
+          document.getElementById('text1').addEventListener('focus',tomarfoco1,false);
+          document.getElementById('text2').addEventListener('focus',tomarfoco2,false);
+          document.getElementById('text1').addEventListener('blur',perderfoco1,false);
+          document.getElementById('text2').addEventListener('blur',perderfoco2,false);
+        }
+      
+        function tomarfoco1()
+        {
+          document.getElementById('text1').style.color='#ff0000';
+        }
+      
+        function tomarfoco2()
+        {
+          document.getElementById('text2').style.color='#ff0000';
+        }
+      
+        function perderfoco1()
+        {
+          document.getElementById('text1').style.color='#000000';
+        }
+      
+        function perderfoco2()
+        {
+          document.getElementById('text2').style.color='#000000';
+        }
+      </script>-->
+
+      <!--<input type="button" id="boton0" name="boton0" value="0" class="boton">
+      <input type="button" id="boton1" name="boton1" value="1" class="boton">
+      <input type="button" id="boton2" name="boton2" value="2" class="boton">
+      <input type="button" id="boton3" name="boton3" value="3" class="boton">
+      <input type="button" id="boton4" name="boton4" value="4" class="boton">
+      <input type="button" id="boton5" name="boton5" value="5" class="boton">
+      <input type="button" id="boton6" name="boton6" value="6" class="boton">
+      <input type="button" id="boton7" name="boton7" value="7" class="boton">
+      <input type="button" id="boton8" name="boton8" value="8" class="boton">
+      <input type="button" id="boton9" name="boton9" value="9" class="boton">
+      <br>
+      <div id="resultado"></div>
+
+
+      <script>
+        window.addEventListener('DOMContentLoaded', inicio, false);
+      
+        function inicio() {
+          for (var x = 0; x <= 9; x++) {
+            document.getElementById('boton' + x).addEventListener('click', presion, false);
+          }
+        }
+      
+        function presion(evt) {
+          document.getElementById('resultado').innerHTML =
+            document.getElementById('resultado').innerHTML + evt.target.value;
+        }
+      </script>-->
+
+      <!--<div>
+        <input type="button" id="boton1" name="boton1" value=" " class="boton">
+        <input type="button" id="boton2" name="boton2" value=" " class="boton">
+        <input type="button" id="boton3" name="boton3" value=" " class="boton">
+      </div>
+      <div>
+        <input type="button" id="boton4" name="boton4" value=" " class="boton">
+        <input type="button" id="boton5" name="boton5" value=" " class="boton">
+        <input type="button" id="boton6" name="boton6" value=" " class="boton">
+      </div>
+      <div>
+        <input type="button" id="boton7" name="boton7" value=" " class="boton">
+        <input type="button" id="boton8" name="boton8" value=" " class="boton">
+        <input type="button" id="boton9" name="boton9" value=" " class="boton">
+      </div>
+
+      <script>
+        window.addEventListener('DOMContentLoaded', inicio, false);
+    
+        var jugador = 'X';
+    
+        function inicio() {
+          for (var x = 1; x <= 9; x++) {
+            document.getElementById('boton' + x).addEventListener('click', presion, false);
+          }
+        }
+    
+        function presion(evt) {
+          evt.target.value = jugador;
+          if (jugador == 'X')
+            jugador = 'O';
+          else
+            jugador = 'X';
+          verificarGanador();
+        }
+    
+        function verificarGanador() {
+          var b1 = document.getElementById('boton1').value;
+          var b2 = document.getElementById('boton2').value;
+          var b3 = document.getElementById('boton3').value;
+          var b4 = document.getElementById('boton4').value;
+          var b5 = document.getElementById('boton5').value;
+          var b6 = document.getElementById('boton6').value;
+          var b7 = document.getElementById('boton7').value;
+          var b8 = document.getElementById('boton8').value;
+          var b9 = document.getElementById('boton9').value;
+    
+          if (b1 == 'X' && b2 == 'X' && b3 == 'X')
+            alert('Gano la X');
+          if (b4 == 'X' && b5 == 'X' && b6 == 'X')
+            alert('Gano la X');
+          if (b7 == 'X' && b8 == 'X' && b9 == 'X')
+            alert('Gano la X');
+          if (b1 == 'X' && b4 == 'X' && b7 == 'X')
+            alert('Gano la X');
+          if (b2 == 'X' && b5 == 'X' && b8 == 'X')
+            alert('Gano la X');
+          if (b3 == 'X' && b6 == 'X' && b9 == 'X')
+            alert('Gano la X');
+          if (b1 == 'X' && b5 == 'X' && b9 == 'X')
+            alert('Gano la X');
+          if (b3 == 'X' && b5 == 'X' && b7 == 'X')
+            alert('Gano la X');
+    
+          if (b1 == 'O' && b2 == 'O' && b3 == 'O')
+            alert('Gano la O');
+          if (b4 == 'O' && b5 == 'O' && b6 == 'O')
+            alert('Gano la O');
+          if (b7 == 'O' && b8 == 'O' && b9 == 'O')
+            alert('Gano la O');
+          if (b1 == 'O' && b4 == 'O' && b7 == 'O')
+            alert('Gano la O');
+          if (b2 == 'O' && b5 == 'O' && b8 == 'O')
+            alert('Gano la O');
+          if (b3 == 'O' && b6 == 'O' && b9 == 'O')
+            alert('Gano la O');
+          if (b1 == 'O' && b5 == 'O' && b9 == 'O')
+            alert('Gano la O');
+          if (b3 == 'O' && b5 == 'O' && b7 == 'O')
+            alert('Gano la O');
+        }
+      </script>-->
+
+      
+        
+</body>
+</html>

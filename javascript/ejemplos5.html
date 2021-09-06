@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--<script>
+        function Numeroquiniela(nombre)
+        {
+          this.nombre=nombre;
+          this.cargarnumero=cargarnumero;
+          this.verificarsigano=verificarsigano;
+        }
+      
+        function cargarnumero()
+        {
+          this.numero=prompt("Que número de quiniela quiere?","");
+        }
+      
+        function verificarsigano(num)
+        {
+          if (this.numero==num)
+            return true;
+          else
+            return false;
+        }
+
+        function Bolillero()
+        {
+          this.numero=-1;
+          this.sortear=sortear;
+        }
+        
+        function sortear()
+        {
+          this.numero=parseInt(Math.random()*10)+1;
+        }
+      
+        var numeroquiniela1;
+        numeroquiniela1=new Numeroquiniela("juan");
+        numeroquiniela1.cargarnumero();
+        var numeroquiniela2;
+        numeroquiniela2=new Numeroquiniela("ana");
+        numeroquiniela2.cargarnumero();
+        var bolillero;
+        bolillero=new Bolillero();
+        bolillero.sortear();
+        document.write('Numero sorteado:' + bolillero.numero + '<br>');
+        document.write(numeroquiniela1.nombre + ' eligió ' + numeroquiniela1.numero +'<br>');
+        document.write(numeroquiniela2.nombre + ' eligió ' + numeroquiniela2.numero +'<br>');
+        if (numeroquiniela1.verificarsigano(bolillero.numero))
+        {
+          document.write(numeroquiniela1.nombre + ' ha ganado <br>');
+        }
+        if (numeroquiniela2.verificarsigano(bolillero.numero))
+        {
+          document.write(numeroquiniela2.nombre + ' ha ganado <br>');
+        }  
+      </script>-->
+
+      <!--<script>
+        function Persona()
+        {
+          this.nombre=prompt('Ingrese nombre de la persona:','');
+          this.edad=parseInt(prompt('Ingrese edad:',''));
+        }
+      
+        function Empresa()
+        {
+          this.edadTope=60;
+          this.nopuedeEntrar=nopuedeEntrar;
+        }
+      
+        function nopuedeEntrar(per)
+        {
+          if (per.edad>=this.edadTope)
+            return true;
+          else
+            return false;
+        }
+
+        var per1=new Persona();
+        var per2=new Persona();
+        var per3=new Persona();  
+        var empresa= new Empresa();
+        var cant=0;
+        if (empresa.nopuedeEntrar(per1))
+          cant++;
+        if (empresa.nopuedeEntrar(per2))
+          cant++;
+        if (empresa.nopuedeEntrar(per3))
+          cant++;
+        document.write('La cantidad de personas que no pueden entrar por su edad a la empresa son:' + cant);
+      </script>-->
+
+      <!--<script>
+          function hipervinculo(direccion,titulo){
+              this.direccion=direccion;
+              this.titulo=titulo;
+              this.retornarhipervinculo=retornarhipervinculo;
+          }
+
+          function retornarhipervinculo(){
+              var cadena;
+              cadena='<a href=' + this.direccion + '>' + this.titulo + '</a>';
+              return cadena;
+
+          }
+
+          var vector=new Array(3);
+          vector[0]=new hipervinculo('http://www.google.com','google');
+          vector[1]=new hipervinculo('http://www.msn.com','msn');
+          vector[2]=new hipervinculo('http://www.yahoo.com','yahoo');
+          for(var f=0;f<vector.length;f++){
+              document.write(vector[f].retornarhipervinculo());
+              document.write('<br>');
+          }
+
+      </script>-->
+
+      <!--<script>
+        function Persona(nombre,edad)
+        {
+          this.nombre=nombre;
+          this.edad=edad;
+          this.imprimirnombre=imprimirnombre;
+        }
+      
+        function imprimirnombre()
+        {    
+          document.write(this.nombre+' que tiene una edad '+this.edad+'<br>' );
+        }
+        
+        var vector=new Array(4);
+        vector[0]=new Persona('juan',44);
+        vector[1]=new Persona('ana',22);
+        vector[2]=new Persona('pedro',44);
+        vector[3]=new Persona('marcos',18);
+        var posmayor=0;
+        for(var f=1;f<vector.length;f++)
+        {
+          if (vector[f].edad>vector[posmayor].edad)
+          {
+            posmayor=f;
+          }
+        }
+        document.write('Personas con mayor edad:<br>');
+        for(var f=0;f<vector.length;f++)    
+        {
+          if (vector[f].edad==vector[posmayor].edad)
+          {
+            vector[f].imprimirnombre();
+          }
+        }
+      </script>-->
+
+      <!--<script>
+          var cliente1={
+              nombre:'juan',
+              deposito:0,
+              imprimir: function(){
+                  document.write(this.nombre+'<br>');
+                  document.write(this.deposito+'<br>');
+              },
+              despositar: function(monto){
+                  this.deposito=this.deposito+monto;
+
+              },
+              extraer: function(monto){
+                  this.deposito=this.deposito-monto;
+              }
+          };
+          cliente1.imprimir();
+          cliente1.despositar(1000);
+          document.write('saldo despues de depositar 1000<br>');
+          cliente1.imprimir();
+          cliente1.extraer(200);
+          document.write('saldo despues de extraer 200<br>');
+          cliente1.imprimir();
+      </script>-->
+
+      <!--<script>
+        var jugador1 = {
+          nombre: 'ana',
+          puntos: 0,
+          imprimir: function() {
+            document.write('Nombre:'+this.nombre+'<br>');
+            document.write('Puntos:'+this.puntos+'<br>');
+          },
+          aumentarpuntos: function(cant) {
+            this.puntos=this.puntos+cant;
+          },
+          verificarsigano: function() {
+            if (this.puntos>1000)
+            {
+              document.write('Gano<br>');
+            }
+          }
+        };
+      
+        jugador1.imprimir();
+        jugador1.aumentarpuntos(500);
+        jugador1.verificarsigano();
+        jugador1.aumentarpuntos(501);
+        jugador1.verificarsigano();  
+        jugador1.imprimir();
+      </script>-->
+
+      <!--<script>
+        var vector1=new Array();
+         vector1[0]=1;
+       
+         var vector2=[];
+         vector2[0]=1;
+       
+         var vector3=new Array(5);
+         vector3[0]=1;
+       
+         var vector4=new Array(1,70,'juan');  
+         var vector5=[1,70,'juan'];  
+       
+         document.write(vector1[0]+'<br>');
+         document.write(vector2[0]+'<br>');
+         document.write(vector3[0]+'<br>');
+         document.write(vector4[0]+'<br>');
+         document.write(vector5[0]+'<br>');
+       </script>-->
+
+       <!--<script>
+        var meses=new Array('enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre');
+        var dias=['lunes','martes','miercoles','jueves','viernes','sábado','domingo']; 
+        var f;  
+        for(f=0;f<meses.length;f++)
+        {
+          document.write(meses[f]+'<br>');
+        } 
+        document.write('<br>');
+        for(f=0;f<dias.length;f++)
+        {
+          document.write(dias[f]+'<br>');
+        } 
+      </script>-->
+
+      <!--<script>
+          var vec=[];
+          var valor;
+          var indice=0;
+          do {
+              valor=prompt('ingrese un valor entero(0 para finalizar)','');
+              valor=parseInt(valor);
+              if(valor!=0){
+                  vec[indice]=valor;
+                  indice++;
+              }
+            }
+            while(valor!=0);
+            var f;
+            var suma=0;
+            for(f=0;f<vec.length;f++){
+                suma=suma+vec[f];
+            }
+            document.write('se ingresaron'+vec.length+'valores<br>');
+            document.write('la suma de los valores ingresados es: '+suma);
+      </script>-->
+
+      <!--<script>
+        var vec1=[];
+        var f;
+        for(f=0;f<10;f++)
+        {
+          vec1[f]=parseInt(1+(Math.random()*500));    
+        }
+        var vec2=[];
+        var vec3=[];
+        var indice1=0;
+        var indice2=0;
+        for(f=0;f<vec1.length;f++)
+        {
+          if(vec1[f]<250)
+          {
+            vec2[indice1]=vec1[f];
+            indice1++;
+          }
+          else
+          {
+            vec3[indice2]=vec1[f];
+            indice2++;
+          }
+        }
+        document.write('Tamaño del primer vector'+vec1.length+'<br>');
+        document.write('Tamaño del segundo vector'+vec2.length+'<br>');
+        document.write('Tamaño del tercer vector'+vec3.length+'<br>');
+        document.write('Elementos del primer vector.<br>');
+        for(f=0;f<vec1.length;f++)
+        {
+          document.write(vec1[f]+'-');
+        }
+        document.write('<br>');
+        document.write('Elementos del segundo vector.<br>');
+        for(f=0;f<vec2.length;f++)
+        {
+          document.write(vec2[f]+'-');
+        }
+        document.write('<br>');
+        document.write('Elementos del tercer vector.<br>');
+        for(f=0;f<vec3.length;f++)
+        {
+          document.write(vec3[f]+'-');
+        }
+      </script>-->
+
+      <!--<script>
+          var vec=[];
+          vec[5]=100;
+          vec[10]=200;
+
+          document.write('atributo length: '+vec.length+'<br>');
+          var f;
+          for(f=0;f<vec.length;f++){
+              document.write(vec[f]+'<br>')
+          }
+
+      </script>-->
+
+      <!--<script>
+          var depositos=[];
+          var num,monto;
+          do {
+              num=prompt('Ingrese nro de cliente','');
+              num=parseInt(num);
+              if (num!=0){
+                  monto=prompt('Ingrese monto a depositar','');
+                  monto=parseInt(monto);
+                  depositos[num]=monto;
+                }
+            } 
+            while (num!=0);
+            var suma=0;
+            var canti=0;
+            for(var f=0;f<depositos.length;f++){
+                if (depositos[f]!==undefined){
+                    suma=suma+depositos[f];
+                    canti++;
+                }
+            }
+            document.write('Cantidad de depósitos:'+canti+'<br>');
+            document.write('Total depositado por todos los clientes:'+suma);
+
+  
+      </script>-->
+
+      <!--<script>
+        var carton=[];
+         var f;
+         var cant=0;
+         do {
+           var premio=parseInt(Math.random()*1000);
+           carton[premio]=1000*(cant+1);
+           cant++;
+         } while (cant!=11);
+         for(f=0;f<carton.length;f++)
+         {
+           if (carton[f]!==undefined)
+           {
+             document.write('Carton '+f+' tiene un premio de '+carton[f]+'<br>');
+           }
+         }
+       </script>-->
+
+       <!--<script>
+           var sueldos=[];
+           var monto;
+           do{
+               monto=prompt('ingrese el sueldo','');
+               monto=parseInt(monto);
+               if(monto!=0){
+                   sueldos.push(monto);
+               }
+
+           }
+           while(monto!=0);
+           var suma=0;
+           for(var f=0;f<sueldos.length;f++){
+               suma=suma+sueldos[f];
+           }
+           document.write('el total de sueldos ingresado es: '+suma);
+       </script>-->
+
+       <!--<script>
+        var  vec=[];
+        var f;
+        for(f=0;f<5;f++)
+        {
+          var nro=1+(Math.random()*1000);
+          vec.push(parseInt(nro));
+        }
+        for(f=0;f<vec.length;f++)
+        {
+          document.write(vec[f]+'<br>');
+        }
+        var sumaultimos=vec.pop()+vec.pop();
+        document.write('La suma de las dos últimas componentes es:'+sumaultimos+'<br>');
+        document.write('Tamaño final del vector'+vec.length+'<br>');
+        document.write('Elementos restantes del vector<br>');
+        for(f=0;f<vec.length;f++)
+        {
+          document.write(vec[f]+'<br>');
+        }
+      </script>-->
+
+      <!--<script>
+          var vec=[];
+           var f;
+           var valor;
+           do{
+               valor=prompt('ingrese el sueldo','');
+               valor=parseInt(valor);
+               if(valor<100){
+                   vec.unshift(valor);
+               }
+               else{
+                   vec.push(valor);;
+               }
+
+           }
+           while(valor!=0);
+           vec.shift();
+           for(var f=0;f<vec.length;f++){
+           }
+           document.write(vec[f]+'<br>');
+      
+      </script>-->
+
+      <!--<script>
+        var vec=[];
+        var f;
+        for(f=0;f<10;f++)
+        {
+          var valor=parseInt(Math.random()*1000);
+          vec.push(valor);
+        }
+        document.write('Vector antes de borrar<br>');
+        for(f=0;f<10;f++)
+        {
+          document.write(vec[f]+'<br>');
+        }
+        for(f=0;f<10;f=f+2)
+        {
+          delete vec[f];
+        }
+        document.write('Vector luego de borrar las posiciones pares<br>');
+        for(f=0;f<10;f++)
+        {
+          document.write(vec[f]+'<br>');
+        }
+        </script>-->
+
+        <!--<script>
+            var nombres=['marcos','ana','luis','jorge','carlos'];
+            var f;
+            document.write('Vector antes de ordenarlo<br>');
+            for(f=0;f<nombres.length;f++)
+            {
+              document.write(nombres[f]+'<br>');
+            }
+            nombres.sort();
+            document.write('Vector después de ordenarlo<br>');
+            for(f=0;f<nombres.length;f++)
+            {
+              document.write(nombres[f]+'<br>');
+            }
+          </script>-->
+
+          <!--<script>
+            var vec=[100,5,60,3,90];
+            var f;
+            document.write('Vector antes de ordenarlo<br>');
+            for(f=0;f<vec.length;f++)
+            {
+              document.write(vec[f]+'<br>');
+            }
+            vec.sort(function(v1,v2) {
+              if (v1>v2)
+                return 1;
+              else
+                return -1;
+            });
+            document.write('Vector después de ordenarlo<br>');
+            for(f=0;f<vec.length;f++)
+            {
+              document.write(vec[f]+'<br>');
+            }
+          </script>-->
+
+          <script>
+            var sueldos=[];
+            var valor;
+            do {
+              valor=prompt('Ingrese el sueldo (cero para finalizar)','');
+              valor=parseInt(valor);
+              if (valor!=0)
+                sueldos.push(valor);
+            } while (valor!=0);
+            
+            sueldos.sort(function(x,y) {
+              if (x>y)
+                return 1;
+              else
+                return -1;
+            });
+           
+            document.write('Sueldos ordenados de menor a mayor<br>');
+            var f;
+            for(f=0;f<sueldos.length;f++)
+            {
+              document.write(sueldos[f]+'<br>');
+            }
+            sueldos.reverse();
+            document.write('Sueldos ordenados de mayor a menor<br>');
+            for(f=0;f<sueldos.length;f++)
+            {
+              document.write(sueldos[f]+'<br>');
+            }
+          </script>
+            
+
+
+
+
+</body>
+</html>

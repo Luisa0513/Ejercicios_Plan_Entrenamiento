@@ -1,0 +1,6 @@
+{
+    "deno.enable":true,
+    "deno.alwaysShowStatus":true,
+    "deno.importmap":null,
+    "deno.autoFmtOnSave":false
+}

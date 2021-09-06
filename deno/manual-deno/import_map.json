@@ -1,0 +1,20 @@
+{
+    "imports": {
+       "fmt/": "https://deno.land/std@0.105.0/fmt/"
+    }
+},
+
+{
+    "imports": {
+      "/": "./",
+      "./": "./"
+    }
+},
+
+{
+    "imports": {
+      "lodash": "https://cdn.skypack.dev/lodash"
+    }
+  }
+
+ 

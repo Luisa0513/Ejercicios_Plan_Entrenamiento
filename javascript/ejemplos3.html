@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /*function cargar(sueldos){
+        var f;
+        for(f=0;f<sueldos.length;f++){
+            var v;
+            v=prompt('ingrese el sueldo: ','');
+            sueldos[f]=parseInt(v);
+        }
+    }
+    function calculargastos(sueldos){
+        var total=0;
+        for(f=0;f<sueldos.length;f++){
+            total=total+sueldos[f];
+        }
+        document.write('listado de sueldos.<br>');
+        for(f=0;f<sueldos.length;f++){
+            document.write(sueldos[f]+'<br>');
+        }
+        document.write('total gastos en sueldos'+total)
+    }
+    var sueldos;
+    sueldos=new Array(5);
+    cargar(sueldos);
+    calculargastos(sueldos);*/
+    
+    /*function mostrarFecha(meses,dias){
+        var num;
+        num=prompt('Ingrese número de mes:','');
+        num=parseInt(num);
+        document.write('Corresponde al mes:'+meses[num-1]);
+        document.write('<br>');
+        document.write('Tiene '+dias[num-1]+' días');
+    }
+    var meses; 
+    meses=new Array(12);
+    meses[0]='Enero';
+    meses[1]='Febrero';
+    meses[2]='Marzo';
+    meses[3]='Abril';
+    meses[4]='Mayo';
+    meses[5]='Junio';
+    meses[6]='Julio';
+    meses[7]='Agosto';
+    meses[8]='Septiembre';
+    meses[9]='Octubre';
+    meses[10]='Noviembre';
+    meses[11]='Diciembre';
+    
+    var dias;
+    dias=new Array(12);
+    dias[0]=31;
+    dias[1]=28;
+    dias[2]=31;
+    dias[3]=30;
+    dias[4]=31;
+    dias[5]=30;
+    dias[6]=31;
+    dias[7]=31;
+    dias[8]=30;
+    dias[9]=31;
+    dias[10]=30;
+    dias[11]=31;
+    mostrarFecha(meses,dias);*/
+
+    /*function cargar(vec){
+        var f;
+        for(f=0;f<vec.length;f++){
+            var valor;
+            valor=prompt('Ingrese componente:','');   
+            vec[f]=parseInt(valor);
+        }
+    }
+    
+    function sumar(vec){
+        var f;
+        var suma=0;
+        for(f=0;f<vec.length;f++){
+            suma=suma+vec[f];
+        }
+        document.write('Valor acumulado de las componentes:'+suma+'<br>');
+    }
+    function sumarmayor36(vec){
+        var f;
+        var suma=0;
+        for(f=0;f<vec.length;f++){
+            if (vec[f]>36){ 
+                suma=suma+vec[f];
+            }
+        }
+        document.write('Valor acumulado de las componentes mayores a 36:'+suma+'<br>');
+    }
+    function cantidadmayores50(vec){
+        var f;
+        var cant=0;
+        for(f=0;f<vec.length;f++){
+            if (vec[f]>50){ 
+                cant=cant+1;
+            }
+        }
+        document.write('Cantidad de componentes mayores a 50:'+cant+'<br>');   
+    }
+    var vec;
+    vec=new Array(8);
+    cargar(vec);
+    sumar(vec);
+    sumarmayor36(vec);
+    cantidadmayores50(vec);*/
+
+    /*var selec=prompt('ingrese un valorentre 1 y 10','');
+    selec=parseInt(selec);
+    var num=parseInt(Math.random()*10+1);
+
+    if (num==selec){
+        document.write('gano el numero que se sorteo es el'+num);
+    }
+    else{
+        document.write('lo siento se sorteo el valor '+num+' y suted eligio el '+selec);
+    }*/
+
+    /*var valor;
+    valor=prompt('Ingrese un valor:','');
+    valor=parseInt(valor);
+    var resu;
+    resu=Math.pow(valor,3);
+    document.write('El valor '+valor+' elevado a la 3 es '+resu);*/
+
+    /*var valor;
+    valor=prompt('Ingrese un valor:','');
+    valor=parseInt(valor);
+    var resu;
+    resu=Math.sqrt(valor);
+    document.write('La raiz cuadrada de '+valor+' es '+resu);*/
+
+    /*var cadena=prompt('ingrese una cadena','');
+    document.write('la cadena ingresada es: '+cadena);
+    document.write('<br>');
+    document.write('la cantidad de caracteres son: '+cadena.length);
+    document.write('<br>');
+    document.write('el primer caracter es: '+cadena.charAt(0));
+    document.write('<br>');
+    document.write('los tres primeros caracteres son: '+cadena.substring(0,3));
+    document.write('<br>');
+
+    if (cadena.indexOf('hola')!=1){
+        document.write('se ingreso la subcadena hola');
+    }
+    else{
+        document.write('no se ingreso la subcadena hola');
+    }
+    document.write('<br>')
+    document.write('la cadena convertida en mayuscula es: '+cadena.toUpperCase());
+    document.write('<br>');
+    document.write('la cadena convertida en minuscula es: '+cadena.toLowerCase());
+    document.write('<br>');*/
+
+    /*var nombre;
+    var cant=0;
+    do {
+        nombre=prompt('Ingrese un nombre (Terminar ingresando Fin):','');
+        cant++;
+    }
+    while (nombre!='Fin');
+    cant--;
+    document.write('Se ingresaron '+cant+' palabras');*/
+
+    /*var nombre;
+    var cant=0;
+    do {
+        nombre=prompt('Ingrese un nombre (Terminar ingresando Fin):','');
+        cant++;
+        nombre=nombre.toUpperCase();
+    }
+    while (nombre!='FIN');
+    cant--;
+    document.write('Se ingresaron '+cant+' palabras');*/
+    </script>
+    
+    <!--<script>
+        /*var contador=0;
+        function incrementar(){
+            contador++;
+            alert('el contador ahora vale :'+contador);
+        }*/
+    </script>
+
+    <form>
+        <input type="button" onclick="incrementar()" value="incrementar">
+    </form>-->
+
+    <!--<script>
+        function presionar1()
+        {
+          alert('Se presionó el botón 1');
+        }
+      
+        function presionar2()
+        {
+          alert('Se presionó el botón 2');
+        }
+      
+        function presionar3()
+        {
+          alert('Se presionó el botón 3');
+        }
+      </script>
+      
+      <form>
+        <input type="button" onClick="presionar1()" value="Boton 1">
+        <input type="button" onClick="presionar2()" value="Boton 2">
+        <input type="button" onClick="presionar3()" value="Boton 3">
+      </form>-->
+
+      <!--<script>
+          function mostrar(){
+              var nom=document.getElementById('nombre').value;
+              var ed=document.getElementById('edad').value;
+              alert('ingreso el nombre '+nom);
+              alert(' y la edad '+ed);
+          }
+      </script>
+
+      <form>
+          ingrese su nombre:
+          <input type="text" id="nombre"><br>
+          ingrese su edad:
+          <input type="text" id="edad"><br>
+          <input type="button" value="confirmar" onclick="mostrar()">
+      </form>-->
+
+      <!--<script>
+        function calcularCubo()
+        {
+          var v=document.getElementById('num').value;
+          v=parseInt(v);
+          var cubo=v*v*v;
+          alert(cubo);
+        }
+      </script>
+      
+      <form>
+        Ingrese un valor:
+        <input type="text" id="num">
+        <br>
+        <input type="button" value="Calcular cubo" onClick="calcularCubo()">
+      </form>-->
+
+      <!--<script>
+        function mostrarmayor()
+        {
+          var num1=document.getElementById('num1').value;
+          var num2=document.getElementById('num2').value;
+          num1=parseInt(num1);
+          num2=parseInt(num2);
+          if (num1>num2)
+          {
+            alert('El mayor es '+num1);
+          }
+          else
+          {
+            alert('El mayor es '+num2);
+          }
+        }
+      </script>
+      
+      <form>
+        Ingrese primer valor:
+        <input type="text" id="num1">
+        <br>
+        Ingrese segundo valor:
+        <input type="text" id="num2">
+        <br>
+        <input type="button" value="mostrar mayor" onClick="mostrarmayor()">
+      </form>-->
+
+      <!--<script>
+          function verificar(){
+              var clave=document.getElementById('clave').value;
+              if (clave.length<5){
+                  alert('la clave no puede tener menos de 5 caracteres');
+
+              }
+              else{
+                  alert('clave correcta');
+              }
+          }
+      </script>
+
+      <form>
+          ingrese un clave:
+          <input type="password" id="clave">
+          <br>
+          <input type="button" value="verificar" onclick="verificar()">
+      </form>-->
+
+      <!--<script>
+        function verificar()
+        {
+          var clave1=document.getElementById('clave1').value;
+          var clave2=document.getElementById('clave2').value;
+          if (clave1==clave2)
+          {
+            alert('Las dos claves ingresadas son iguales');
+          }
+          else
+          {
+            alert('Las dos claves ingresadas son distintas');
+          }
+        }
+      </script>
+      
+      <form>
+      Ingrese clave:
+      <input type="password" id="clave1">
+      <br>
+      Repita la clave:
+      <input type="password" id="clave2">
+      <br>
+      <input type="button" value="Verificar clave" onClick="verificar()">
+      </form>-->
+
+      <!--<script>
+          function cambiarcolor(){
+              var seleccion=document.getElementById('select1');
+              document.getElementById('text1').value=seleccion.selectedIndex;
+              document.getElementById('text2').value=seleccion.options[selectedIndex].text;
+              document.getElementById('text3').value=seleccion.options[selectedIndex].value;
+          }
+      </script>
+
+      <form>
+          <select id="select1" onchange="cambiarcolor()">
+            <option value="ff0000">Rojo</option>
+            <option value="00ff00">Verde</option>
+            <option value="0000ff">Azul</option>
+        </select>
+        <br>
+        numero de indice seleccionado del objeto SELECT:<input type="text" id="text1"><br>
+        texto seleccionado:<input type="text" id="text2"><br>
+        valor asociado:<input type="text" id="text3"><br>
+      </form>-->
+
+      <!--<script>
+        function mostrarseleccionpizza()
+        {
+          document.getElementById('mensaje').value = 
+            document.getElementById('pizza').options[document.getElementById('pizza').selectedIndex].value;
+        }
+      </script>
+      
+      <form>
+        Pizzas:
+        <select id="pizza" onChange="mostrarseleccionpizza()">
+          <option value="180">Jamon y Queso</option>
+          <option value="150">Muzzarella</option>
+          <option value="170">Morrones</option>
+        </select>
+        <br>
+        <input type="text" id="mensaje">
+      </form>-->
+
+      <!--<script>
+        function calcularpresupuesto()
+        {
+          var ele1=document.getElementById('procesador')
+          var precio1=ele1.options[ele1.selectedIndex].value;
+          var ele2=document.getElementById('monitor')
+          var precio2=ele2.options[ele2.selectedIndex].value;
+          var ele3=document.getElementById('discoduro')
+          var precio3=ele3.options[ele3.selectedIndex].value;
+          precio1=parseInt(precio1);
+          precio2=parseInt(precio2);
+          precio3=parseInt(precio3);
+          var suma=precio1+precio2+precio3;
+          document.getElementById('resultado').value=suma;
+        }
+      </script>
+      
+      <form>
+        Procesador:
+        <select id="procesador">
+          <option value="400">Intel I3</option>
+          <option value="600">Intel I5</option>
+          <option value="800">Intel I7</option>
+        </select>
+        <br>
+        Procesador:
+        <select id="monitor">
+          <option value="250">Monitor Samsung 20'</option>
+          <option value="350">Monitor Samsung 22'</option>
+          <option value="550">Monitor Samsung 26'</option>
+        </select>
+        <br>
+        Disco duro:
+        <select id="discoduro">
+          <option value="300">Disco Duro 500 Gb</option>
+          <option value="440">Disco Duro 1 Tb</option>
+          <option value="500">Disco Duro 3 Tb</option>
+        </select>
+        <br>
+      <input type="button" value="Calcular presupuesto" onClick="calcularpresupuesto()">
+      <br>
+      <input type="text" id="resultado">
+      </form>-->
+
+      <!--<script>
+          function contarseleccionados(){
+              var cant=0;
+              if(document.getElementById('checkbox1').checked){
+                  cant++;
+              }
+              if(document.getElementById('checkbox2').checked){
+                  cant++;
+              }
+              if(document.getElementById('checkbox3').checked){
+                  cant++;
+              }
+              if(document.getElementById('checkbox4').checked){
+                  cant++;
+              }
+              alert('conoce '+cant+' lenguajes');
+
+          }
+
+      </script>
+
+      <form>
+          <input type="checkbox" id="checkbox1">JAVASCRIPT
+          <br>
+          <input type="checkbox" id="checkbox2">PHP
+          <br>
+          <input type="checkbox" id="checkbox3">JSP
+          <br>
+          <input type="checkbox" id="checkbox4" >VB.NET
+          <br>
+          <input type="button" value="mostrar" onclick="contarseleccionados()">
+
+      </form>-->
+
+      <!--<script>
+        function verificar()
+        {
+          var deportes='';
+          if (document.getElementById("checkbox1").checked)
+          {
+            deportes=deportes+'Fútbol ';
+          }
+          if (document.getElementById("checkbox2").checked)
+          {
+            deportes=deportes+'Básquet ';
+          }
+          if (document.getElementById("checkbox3").checked)
+          {
+            deportes=deportes+'Tenis';
+          }
+          alert('Los deportes seleccionados son:'+deportes);
+        }
+      </script>
+      
+      <form>
+        Seleccione los deportes que practica:<br>
+        <input type="checkbox" id="checkbox1">Fútbol<br>
+        <input type="checkbox" id="checkbox2">Básquet<br>
+        <input type="checkbox" id="checkbox3">Tenis<br>
+        <input type="button" value="Controlar" onClick="verificar()">
+      </form>-->
+
+      <!--<script>
+        function mostrarseleccionados()
+        {
+          if (document.getElementById("radio1").checked)
+          {
+            alert('no tienes estudios');
+          }
+          if (document.getElementById("radio2").checked)
+          {
+            alert('tienes estudios primarios');
+          }
+          if (document.getElementById("radio3").checked)
+          {
+            alert('tienes estudios secundarios');
+          }
+          if (document.getElementById("radio4").checked)
+          {
+            alert('tienes estudios universitarios');
+          }
+        }
+      </script>
+      
+      <form>
+        Seleccione los deportes que practica:<br>
+        <input type="radio" id="radio1" name="estudios">sin estudios<br>
+        <input type="radio" id="radio2" name="estudios">primarios<br>
+        <input type="radio" id="radio3" name="estudios">secundarios<br>
+        <input type="radio" id="radio4" name="estudios">universitarios<br>
+        <input type="button" value="mostrar" onClick="mostrarseleccionados()">
+      </form>-->
+
+      <!--<script>
+        function verificar()
+        {
+          if (document.getElementById('radio1').checked)
+          {
+            alert('Eres mayor de edad, asi que puedes ingresar');
+          }
+          if (document.getElementById('radio2').checked)
+          {
+            alert('No eres mayor de edad, asi que no puedes ingresar');
+          }
+        }
+      </script>
+      
+      <form>
+        ¿Es mayor de edad?
+        <br>
+        <input type="radio" id="radio1" name="edad">si<br>
+        <input type="radio" id="radio2" name="edad">no<br>
+        <input type="button" value="Verificar" onClick="verificar()">
+      </form>-->
+
+      <!--<script>
+          function controlarcaracteres(){
+              if(document.getElementById('curriculum').value.length>2000){
+                  alert('curriculum muy largo');
+              }
+              else{
+                  alert('datos correctos');
+              }
+          }
+
+      </script>
+      <form>
+          <textarea id="curriculum" cols="50" rows="10"></textarea>
+          <br>
+          <input type="button" value="mostrar" onclick="controlarcaracteres()">
+      </form>-->
+
+      <script>
+        function verificar()
+        {
+          var nombre=document.getElementById('nombre').value;
+          var mail=document.getElementById('mail').value;
+          var comentarios=document.getElementById('comentarios').value;
+          alert(nombre+'\n'+mail+'\n'+comentarios);
+        }
+      </script>
+      
+      <form>
+        Ingrese nombre:
+        <input type="text" id="nombre"><br>
+        Ingrese mail:
+        <input type="text" id="mail"><br>
+        Comentarios:<br>
+        <textarea id="comentarios" rows="10" cols="50"></textarea><br>
+        <input type="button" value="confirmar" onClick="verificar()">
+      </form>
+
+
+
+
+
+</body>
+</html>

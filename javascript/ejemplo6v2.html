@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+    <!--<script>
+        var vec=[];  
+        var f;
+        for(f=0;f<10;f++)
+        {
+          vec[f]=parseInt(Math.random()*1001);
+        }
+        document.write('Vector original<br>');
+        for(f=0;f<vec.length;f++)
+        {
+          document.write(vec[f]+'-');
+        }
+        document.write('<br>');
+        var menor=vec[0];
+        var pos=0;
+        for(f=1;f<vec.length;f++)
+        {
+          if (vec[f]<menor)
+          {
+            menor=vec[f];
+            pos=f;
+          }
+        }
+        document.write('Elemento menor del vector:'+menor);
+        document.write('<br>');
+        var vec2=vec.slice(pos);
+        document.write('Vector resultante de la llamada a slice<br>');
+        for(f=0;f<vec2.length;f++)
+        {
+          document.write(vec2[f]+'-');
+        }
+      </script>-->
+
+      <!--<script>
+          var vec=[10,20,30,40,50];
+          var cadena=vec.join('-');
+          document.write(cadena);
+      </script>-->
+
+      <!--<script>
+  
+        var nombres=new Array(5);
+        var f;
+        for(f=0;f<nombres.length;f++)
+        {
+          nombres[f]=prompt('Ingrese un nombre:','');
+        }
+        document.write(nombres.join('<br>'));
+      
+      </script>-->
+
+      <!--<script>
+          var vec=[10,20,30,40,50];
+          var vecnuevo=vec.concat(1,2,3);
+          document.write('vector origen<br>');
+          document.write(vec.join()+'<br>');
+          document.write('vector generado<br>');
+          document.write(vecnuevo.join()+'<br>');
+
+      </script>-->
+
+      <!--<script>
+        var vec1=[10,20,30,40];
+         var vec2=[100,200,300,400];
+         var vecsuma=vec1.concat(vec2);
+         document.write('Primer vector:');
+         document.write(vec1.join()+'<br>');
+         document.write('Segundo vector:');
+         document.write(vec2.join()+'<br>');
+         document.write('vectores concatenados:');
+         document.write(vecsuma.join()+'<br>');
+       </script>-->
+
+       <!--<script>
+           var vec=new Array(10);
+           var f;
+           for(f=0;f<vec.length;f++){
+               vec[f]=parseInt(Math.random()*1001);
+
+           }
+           var cadena=vec.toString();
+           document.write(cadena);
+       </script>-->
+
+       <!--<script>
+        var vec=[1,2,3,4,5,6,7,8,9,10];
+        var cadena1=vec.toString();
+        var cadena2=vec.join();
+        if (cadena1==cadena2)
+          document.write('son iguales los dos string');
+        else
+        document.write('no son iguales los dos string');  
+      </script>-->
+
+      <!--<script>
+          var vec=[10,20,30,40,50,60];
+            var f;
+            for(f=0;f<vec.length;f++)
+            {
+              document.write(vec[f]+'-');
+            }
+      </script>-->
+
+      <!--<script>
+        var vec=[10,20,30,40,50];
+        for(var indice in vec)
+        {
+          document.write(indice);
+          document.write(vec[indice]+'-');
+        }
+      </script>-->
+
+      <!--<script>
+        var vec=[10,,30,,50];
+        document.write('Recorredo del vector con un for clásico<br>');
+        var f;
+        for(f=0;f<vec.length;f++)
+        {
+          document.write(vec[f]+'-');
+        }
+        document.write('<br>');
+        document.write('Recorredo del vector con un for in<br>');
+        for(var indice in vec)
+        {
+          document.write(vec[indice]+'-');
+        }
+      </script>-->
+
+      <!--<script>
+        var vec = [10, 20, 30, 40, 50];
+        vec.forEach(function (componente, indice) {
+          document.write('Posición:' + indice + ' = ');
+          document.write(componente + '<br>');
+        })
+      </script>-->
+
+      <!--<script>
+          function sumar(x,y){
+              var s=x+y;
+              return s;
+          }
+          document.write(sumar(5,3));
+
+      </script>-->
+
+      <!--<script>
+        function sumar(x,y){
+            var s=arguments[0]+arguments[1];
+            return s;
+        }
+        document.write(sumar(5,3));
+
+    </script>-->
+
+    <!--<script>
+        function sumar()
+        {
+          var s=0;
+          var f;
+          for(f=0; f<arguments.length; f++)
+          {
+            s=s+arguments[f];
+          }
+          return s;
+        }
+      
+        document.write(sumar(2,4));
+        document.write('<br>');
+        document.write(sumar(1,2,3,4,5));
+        document.write('<br>');
+        document.write(sumar(100,200,300));
+      </script>-->
+
+      <!--<div id="lista1"></div>
+
+
+      <script>
+        window.onload=iniciar;
+      
+        function iniciar()
+        {
+          generarLista('lista1','uno','dos','tres','cuatro','cinco','seis');
+        }
+      
+        function generarLista()
+        {
+          var s='<ol>';
+          var f;
+          for(f=1;f<arguments.length;f++)
+          {
+            s=s+'<li>'+arguments[f]+'</li>';
+          }
+          s=s+'</ol>';
+          var elemento1=document.getElementById(arguments[0]);
+          elemento1.innerHTML=s;
+        }
+      </script>-->
+
+      <!--<script>
+        function mayor()
+        {
+          var may=arguments[0];
+          var f;
+          for(f=1;f<arguments.length;f++)
+          {
+            if (arguments[f]>may)
+            {
+              may=arguments[f];
+            }
+          }
+          return may;
+        }
+      
+        document.write(mayor(7,22,4,66,3,22,55));
+      </script>-->
+
+      <!--<script>
+          function imprimir(){
+              var x=10;
+              document.write(x);
+          }
+          imprimir();
+      </script>-->
+
+      <!--<script>
+        function imprimir()
+        {
+          document.write(global1+'<br>');
+          global1++;
+        }
+      
+        var global1=100;
+        imprimir();
+        document.write(global1);
+      </script>-->
+
+      <!--<script>
+        var global1=100;
+        document.write(global1+'<br>');        
+        document.write(window.global1+'<br>'); 
+      </script>-->
+
+      <!--<script>
+          function calcularPerimetro(lado){
+              var per=lado*4;
+              return per;
+
+          }
+          var l=prompt('ingrese el valor del lado','');
+          l=parseInt(l);
+          document.write(calcularPerimetro(l));
+      </script>-->
+
+      <!--<script>
+        function $(ele)
+        {
+          return document.getElementById(ele);
+        }
+      
+        function inicio()
+        {
+          $('cuerpo').style.backgroundColor='#ffff00';
+        }
+      
+        window.onload=inicio;
+      </script>-->
+
+      <!--<div id="div1"></div>
+
+      <script>
+        function generarListaOrdenada(vec)
+        {
+          function comienzo()
+          {
+            s='<ol>';
+          }
+        
+          function fin()
+          {
+            s=s+'</ol>';
+          }
+          
+          var s='';
+          comienzo();
+          var f;
+          for(f=0;f<vec.length;f++)
+          {
+            s=s+'<li>'+vec[f]+'</li>';
+          }
+          fin();
+          return s;
+        }
+      
+        onload=function() {
+          var opciones=['Opción a','Opción b','Opción c','Opción d'];
+          document.getElementById('div1').innerHTML=generarListaOrdenada(opciones);
+        }
+      </script>-->
+
+      <script>
+        function f1(x)
+        {
+          function f2(y)
+          {
+            document.write('Parámetro de la función exterior:'+x+'<br>');
+            document.write('Parámetro de la función anidada:'+y+'<br>');
+            document.write('variable local de la función exterior:'+z+'<br>');
+          }
+          
+          var z=1;
+          f2(2);
+        }
+      
+        f1(3);
+      </script>
+</body>
+</html>
